@@ -1,0 +1,2 @@
+iverilog -o FSM_Baseball_out FSM_Baseball_tb.v
+vvp FSM_Baseball_out
