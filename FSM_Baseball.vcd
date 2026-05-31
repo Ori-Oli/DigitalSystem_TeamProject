@@ -1,0 +1,209 @@
+$date
+	Sun May 31 22:47:46 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module FSM_Baseball_TEST $end
+$var wire 2 ! result [1:0] $end
+$var reg 1 " clk $end
+$var reg 2 # pitch [1:0] $end
+$var reg 1 $ rstn $end
+$scope module u_FSM_Baseball $end
+$var wire 1 " clk $end
+$var wire 2 % pitch [1:0] $end
+$var wire 1 $ rstn $end
+$var parameter 3 & b0 $end
+$var parameter 3 ' b1 $end
+$var parameter 3 ( b2 $end
+$var parameter 3 ) b3 $end
+$var parameter 3 * out $end
+$var parameter 3 + s0 $end
+$var parameter 3 , s1 $end
+$var parameter 3 - s2 $end
+$var reg 5 . b_next_state [4:0] $end
+$var reg 5 / b_state [4:0] $end
+$var reg 2 0 result [1:0] $end
+$var reg 5 1 s_next_state [4:0] $end
+$var reg 5 2 s_state [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10 -
+b1 ,
+b0 +
+b111 *
+b110 )
+b101 (
+b100 '
+b11 &
+$end
+#0
+$dumpvars
+b0 2
+b0 1
+b0 0
+b11 /
+b11 .
+b0 %
+0$
+b0 #
+0"
+b0 !
+$end
+#5
+1"
+#10
+0"
+1$
+#15
+1"
+#20
+0"
+b1 #
+b1 %
+#25
+b1 1
+1"
+#30
+0"
+#35
+b1 2
+b10 1
+1"
+#40
+0"
+#45
+b10 2
+b111 1
+1"
+#50
+0"
+b0 #
+b0 %
+#55
+b1 !
+b1 0
+b111 2
+b0 1
+1"
+#60
+0"
+#65
+b0 !
+b0 0
+b0 2
+1"
+#70
+0"
+b10 #
+b10 %
+#75
+b100 .
+1"
+#80
+0"
+#85
+b100 /
+b101 .
+1"
+#90
+0"
+#95
+b101 /
+b110 .
+1"
+#100
+0"
+#105
+b110 /
+b111 .
+1"
+#110
+0"
+b0 #
+b0 %
+#115
+b10 !
+b10 0
+b111 /
+b11 .
+1"
+#120
+0"
+#125
+b0 !
+b0 0
+b11 /
+1"
+#130
+0"
+b10 #
+b10 %
+#135
+b100 .
+1"
+#140
+0"
+#145
+b100 /
+b101 .
+1"
+#150
+0"
+b1 #
+b1 %
+#155
+b1 1
+1"
+#160
+0"
+b10 #
+b10 %
+#165
+b101 /
+b110 .
+1"
+#170
+0"
+b1 #
+b1 %
+#175
+b1 2
+b10 1
+1"
+#180
+0"
+b10 #
+b10 %
+#185
+b110 /
+b111 .
+1"
+#190
+0"
+b0 #
+b0 %
+#195
+b10 !
+b10 0
+b111 /
+b11 .
+b10 2
+b0 1
+1"
+#200
+0"
+#205
+b0 !
+b0 0
+b11 /
+b0 2
+1"
+#210
+0"
