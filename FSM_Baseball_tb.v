@@ -12,32 +12,34 @@ module FSM_Baseball_TEST;
 
     initial begin
         $dumpfile("FSM_Baseball.vcd");
-        $dumpvars(0);
+        $dumpvars(0, FSM_Baseball_TEST);
     end
 
     initial begin
         rstn = 1'b0; pitch = 2'b00; clk = 1'b0;
         #10 rstn = 1'b1;
-        #10 pitch = 2'b01;//s
-        #10 pitch = 2'b01;//s
-        #10 pitch = 2'b01;//s - out
+
+        #10 pitch = 2'b01; // Scenario 1: strike
+        #10 pitch = 2'b01; // strike
+        #10 pitch = 2'b01; // strike -> out
         #10 pitch = 2'b00;
         #10 pitch = 2'b00;
-        #10 pitch = 2'b10;//b
-        #10 pitch = 2'b10;//b
-        #10 pitch = 2'b10;//b
-        #10 pitch = 2'b10;//b - four_ball
+
+        #10 pitch = 2'b10; // Scenario 2: ball
+        #10 pitch = 2'b10; // ball
+        #10 pitch = 2'b10; // ball
+        #10 pitch = 2'b10; // ball -> four_ball
         #10 pitch = 2'b00;
         #10 pitch = 2'b00;
-        #10 pitch = 2'b10;//b
-        #10 pitch = 2'b10;//b
-        #10 pitch = 2'b01;//s
-        #10 pitch = 2'b10;//b
-        #10 pitch = 2'b01;//s
-        #10 pitch = 2'b10;//b - four_ball
+
+        #10 pitch = 2'b10; // Scenario 3: ball
+        #10 pitch = 2'b10; // ball
+        #10 pitch = 2'b01; // strike
+        #10 pitch = 2'b10; // ball
+        #10 pitch = 2'b01; // strike
+        #10 pitch = 2'b10; // ball -> four_ball
         #10 pitch = 2'b00;
         #10 pitch = 2'b00;
         #10 $finish;
     end
-
 endmodule
